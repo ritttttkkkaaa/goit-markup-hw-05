@@ -106,6 +106,9 @@ button {
     color: #2E2F42;
     position: relative;
     padding-bottom: 27px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 .menu-link.link.current::after {
@@ -130,9 +133,6 @@ button {
 .menu-link:hover,
 .menu-link:focus {
     color: #4D5AE5;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -144,7 +144,11 @@ button {
     color: #434455;
     margin-left: auto;
     margin-right: 40px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .contacts-info {
     margin-left: auto;
@@ -154,9 +158,6 @@ button {
 .contacts:hover,
 .contacts:focus{
     color: #4D5AE5;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -206,15 +207,15 @@ h1 {
     color: #ffffff;
     background-color: #4D5AE5;
     margin-top:  48px;
-    text-align: center
+    text-align: center;
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: #404BBF ;
-    transition-property: background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-backgound {
@@ -257,15 +258,15 @@ h1 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color:  #4D5AE5;;
+    background-color:  #4D5AE5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
     background-color:#404BBF;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 h3 {
     font-family: 'Roboto', sans-serif;
@@ -391,6 +392,9 @@ h2 {
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
+    transition-property:background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -398,9 +402,6 @@ h2 {
     background-color: #4D5AE5;
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-property:background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-list:not(:last-child) {
@@ -439,11 +440,13 @@ h2 {
     padding-top: 32px;
     padding-bottom: 32px ;
     padding-left: 16px;
+    transition-property:box-shadow ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-item:hover,
 .text-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .footer {
@@ -506,15 +509,15 @@ h4 {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;  
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .footer-list-link:hover,
 .footer-list-link:focus {
     background-color: #31D0AA;
     cursor: pointer;
-    transition-property: background-color;
-    transition-duration: 250ms;  
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .footer-container {
@@ -533,16 +536,15 @@ h4 {
     height: 100%;
     color:grey;
     border: 1px solid grey;
+    transition-property: color,border ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-background:hover,
 .customer-background:focus {
-    color: #4D5AE5;
-    border: 1px solid #4D5AE5;
-    transition-property: color,border ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    color:#404BBF;
+    border: 1px solid #404BBF;
 }
 .logo-icons {
     fill: currentColor;
@@ -568,10 +570,9 @@ h4 {
     width: 100%;
     height: 100%;
     transform: translate(0, 100%);
-    transition-property: background-color;
-    transition-duration: 3s ; 
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 .team-list-img-wrapper  {
     position: relative;
     display: block;
@@ -579,7 +580,6 @@ h4 {
 }
 .content-item:hover .overlay {
     transform: translate(0,0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .backdrop {
@@ -589,6 +589,9 @@ h4 {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+	transition-duration: 250ms;
+	transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -601,7 +604,17 @@ h4 {
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transition-property: inherit;
+	transform: translate(-50%, -50%) scale(1);
+	transition-duration: 300ms;
+	transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%);
+	top: 0;
+}
+
 
 .modal-close-btn {
     position: absolute;
@@ -617,15 +630,14 @@ h4 {
     align-items: center;
     top: 24px;
     right: 24px;
+    transition-property:background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #E7E9FC;
-    transition-property:background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-btn-icon-close {
